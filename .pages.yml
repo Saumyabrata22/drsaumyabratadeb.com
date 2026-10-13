@@ -8,7 +8,7 @@ content:
     label: Medical Articles
     type: collection
     path: posts
-    filename: "{primary}.md"
+    filename: "{primary}.dnb"
     format: yaml-frontmatter
     view:
       primary: title
