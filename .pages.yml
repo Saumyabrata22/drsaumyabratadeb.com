@@ -40,3 +40,26 @@ content:
         label: Article Content
         type: rich-text
         required: true
+        
+  - name: site
+    label: Homepage Settings
+    type: file
+    path: site-settings.yml
+    format: yaml
+    fields:
+      - name: name
+        label: Doctor Name
+        type: string
+      - name: qualification
+        label: Qualifications
+        type: string
+      - name: profile_image
+        label: Profile Photo
+        type: image
+      - name: specialty
+        label: Specialty
+        type: string
+      - name: language
+        label: Languages
+        type: string
+
