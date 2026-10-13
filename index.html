@@ -261,5 +261,31 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <script>
+fetch('/site-settings.yml')
+  .then(response => response.text())
+  .then(text => {
+    const settings = {};
+    text.split('\n').forEach(line => {
+      const i = line.indexOf(':');
+      if (i > 0) {
+        settings[line.slice(0, i).trim()] =
+          line.slice(i + 1).trim();
+      }
+    });
+
+    document.querySelectorAll('h1').forEach(el => {
+      if (el.textContent.includes('Dr Saumyabrata Deb')) {
+        el.textContent = settings.name || el.textContent;
+      }
+    });
+
+    const photo = document.querySelector('#profile-photo');
+    if (photo && settings.profile_image) {
+      photo.src = settings.profile_image;
+    }
+  })
+  .catch(error => console.log('Profile settings:', error));
+</script>
 </body>
 </html>
