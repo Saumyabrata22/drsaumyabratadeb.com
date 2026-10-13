@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr Saumyabrata Deb, DNB General Medicine. Evidence-based health education in English and Bengali.">
+  <title>Dr Saumyabrata Deb | Physician & Health Educator</title>
+  <style>
+    :root {
+      --navy: #102a43;
+      --teal: #087e83;
+      --cream: #f7f7f2;
+      --muted: #627387;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, 90%); margin: auto; }
+    header {
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e5e9eb;
+    }
+    nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand { font-weight: 800; font-size: 18px; }
+    .brand span { color: var(--teal); }
+    .navlinks { display: flex; gap: 22px; flex-wrap: wrap; }
+    .navlinks a { text-decoration: none; font-size: 14px; }
+    .hero { padding: 86px 0 78px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 62px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 18px 0;
+    }
+    h1 span { color: var(--teal); }
+    .intro { color: var(--muted); font-size: 18px; max-width: 590px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .primary { color: white; background: var(--teal); }
+    .secondary { border: 1px solid #cbd5df; background: white; }
+    .profile-card {
+      background: white;
+      padding: 32px;
+      border-radius: 18px;
+      border: 1px solid #e1e8eb;
+      box-shadow: 0 18px 55px rgba(16,42,67,.07);
+    }
+    .monogram {
+      height: 94px; width: 94px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: #dff2ef; color: var(--teal);
+      font-size: 30px; font-weight: 800; margin-bottom: 22px;
+    }
+    .profile-card h2 { margin: 0; font-size: 23px; }
+    .profile-card p { color: var(--muted); margin: 6px 0 18px; }
+    .tag {
+      display: inline-block; padding: 6px 10px; margin: 4px 3px 0 0;
+      background: #eef5f5; border-radius: 4px; font-size: 12px;
+    }
+    section { padding: 68px 0; }
+    .white { background: white; }
+    .section-label { color: var(--teal); text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: 800; }
+    h2.section-title { font-size: clamp(28px,4vw,40px); line-height: 1.2; margin: 10px 0 18px; }
+    .section-intro { color: var(--muted); max-width: 700px; }
+    .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 32px; }
+    .card {
+      background: white; border: 1px solid #e4e9eb;
+      padding: 25px; border-radius: 12px;
+    }
+    .white .card { background: var(--cream); }
+    .card .number { color: var(--teal); font-weight: 800; font-size: 13px; }
+    .card h3 { margin: 10px 0; font-size: 20px; }
+    .card p { color: var(--muted); font-size: 15px; }
+    .note {
+      margin-top: 28px; padding: 18px 20px; background: #eef5f5;
+      border-left: 4px solid var(--teal); color: #344e5c; font-size: 14px;
+    }
+    .contact {
+      background: var(--navy); color: white; border-radius: 16px; padding: 38px;
+      display: flex; align-items: center; justify-content: space-between; gap: 25px;
+    }
+    .contact p { color: #d4e0e8; }
+    footer { padding: 28px 0; color: var(--muted); font-size: 13px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    @media(max-width:760px) {
+      nav { padding: 18px 0; align-items: flex-start; flex-direction: column; }
+      .navlinks { gap: 15px; }
+      .hero { padding: 55px 0; }
+      .hero-grid, .cards { grid-template-columns: 1fr; }
+      .hero-grid { gap: 30px; }
+      .contact { flex-direction: column; align-items: flex-start; padding: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <div class="brand">Dr Saumyabrata <span>Deb</span></div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#learn">Health Library</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Medicine · Evidence · Education</div>
+          <h1>Better health begins with <span>understanding.</span></h1>
+          <p class="intro">
+            Welcome to my medical website. Explore clear, evidence-based health
+            information designed to help you make more informed decisions about your health.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#learn">Explore health articles</a>
+            <a class="btn secondary" href="#about">About the doctor</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <div class="monogram">SD</div>
+          <h2>Dr Saumyabrata Deb</h2>
+          <p>Physician · DNB, General Medicine</p>
+          <span class="tag">Internal Medicine</span>
+          <span class="tag">Patient Education</span>
+          <span class="tag">Evidence-Based Health</span>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="white">
+      <div class="wrap">
+        <div class="section-label">About me</div>
+        <h2 class="section-title">Medicine, explained clearly.</h2>
+        <p class="section-intro">
+          I am a physician trained in General Medicine. My aim is to make reliable
+          medical knowledge easier to understand and use in everyday life.
+          This website shares educational resources on common conditions,
+          prevention, investigations and advances in medicine.
+        </p>
+        <div class="note">
+          Medical information on this website is for general education and does
+          not replace an individual consultation with a qualified healthcare professional.
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="wrap">
+        <div class="section-label">Areas of interest</div>
+        <h2 class="section-title">Understanding your health</h2>
+        <p class="section-intro">Explore topics that matter for prevention, diagnosis and long-term health.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="number">01 / METABOLIC HEALTH</div>
+            <h3>Diabetes & thyroid</h3>
+            <p>Understand blood sugar, thyroid tests, lifestyle measures and long-term risk reduction.</p>
+          </article>
+          <article class="card">
+            <div class="number">02 / HEART HEALTH</div>
+            <h3>Blood pressure & heart</h3>
+            <p>Learn about hypertension, cardiovascular risk factors and preventive health.</p>
+          </article>
+          <article class="card">
+            <div class="number">03 / GENERAL MEDICINE</div>
+            <h3>Symptoms & investigations</h3>
+            <p>Clear explanations of common symptoms, medical tests and when to seek care.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="white">
+      <div class="wrap">
+        <div class="section-label">Health library</div>
+        <h2 class="section-title">Learn. Understand. Take informed action.</h2>
+        <p class="section-intro">
+          Health articles in English and Bengali will be added here. The goal is
+          to make trustworthy medical information accessible to more people.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <div class="number">PATIENT GUIDE</div>
+            <h3>Understanding fever</h3>
+            <p>Learn how to monitor fever, maintain hydration and recognise warning signs that need medical assessment.</p>
+          </article>
+          <article class="card">
+            <div class="number">BENGALI স্বাস্থ্যশিক্ষা</div>
+            <h3>ডায়াবেটিস সম্পর্কে জানুন</h3>
+            <p>সহজ ভাষায় রক্তে শর্করা, নিয়মিত পরীক্ষা এবং স্বাস্থ্যকর জীবনযাপন সম্পর্কে জানুন।</p>
+          </article>
+          <article class="card">
+            <div class="number">PREVENTION</div>
+            <h3>Know your blood pressure</h3>
+            <p>Understand blood pressure readings and why regular monitoring matters.</p>
+          </article>
+        </div>
+        <p class="section-intro">These are introductory topics. Detailed articles will be published as the library grows.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <div class="section-label">Get in touch</div>
+            <h2 class="section-title">Your health questions deserve reliable answers.</h2>
+            <p>For appointments, please use your doctor's verified clinic contact details.</p>
+          </div>
+          <a class="btn primary" href="mailto:">Contact the doctor</a>
+        </div>
+        <p class="section-intro">Clinic address, appointment phone number and consultation hours will be added after verification.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© <span id="year"></span> Dr Saumyabrata Deb</span>
+      <span>Medical education · Evidence-based information</span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
