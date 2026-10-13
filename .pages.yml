@@ -1,0 +1,42 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: posts
+    label: Medical Articles
+    type: collection
+    path: posts
+    filename: "{primary}.md"
+    format: yaml-frontmatter
+    view:
+      primary: title
+      fields:
+        - title
+        - date
+        - category
+      sort:
+        - date
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Article Title
+        type: string
+        required: true
+      - name: date
+        label: Publication Date
+        type: string
+        required: true
+      - name: category
+        label: Category
+        type: string
+      - name: excerpt
+        label: Short Description
+        type: text
+      - name: body
+        label: Article Content
+        type: rich-text
+        required: true
